@@ -1,0 +1,152 @@
+@import 'all';
+//////////////////////////////////////
+body{
+  ._anim-show._active,
+  ._active ._anim-show{
+      opacity: 1;
+      transform: translate(0px, 0px);
+  }
+    .container1{
+        background-image: url(../pics/party.jpeg);
+    }
+    .sale{
+        width: 100%;
+        #sale{
+            display: block;
+            color: white;
+            font-size: 2vw;
+            padding: 3vw 10vw 3vw 1.5vw;
+            margin-top: 0;
+            background-color: #382a915c;
+        }
+    }
+    .strouk{
+        @extend %forline;
+    }
+    .birth1{
+       @extend %forbirth;
+       overflow: hidden;
+    }
+    .birth2{
+        @extend %forbirth;
+        width: 60%;
+        overflow: hidden;
+        transition-delay: .4s;
+    }
+    h2{
+        @extend %forh;
+    }
+
+    .setka > div{
+        display: grid;
+        place-items:end;
+    
+      }
+      .setka{  
+        margin: 2vw auto 2vw auto;
+        gap: 1.1vw;
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(15,1fr);
+        width: 85%;
+        align-items: stretch;
+        height: 70vw;
+      
+      .boks-1{
+        grid-column: 1/7;
+        grid-row: 1/5;
+        background-image: url(../pics/грузия2.png);
+        @extend %forgridfotos;
+      }
+      .boks-2{
+        grid-column: 7/10;
+        grid-row:1/10;
+        background-image: url(../pics/египет.jpg) !important;
+        @extend %forgridfotos;
+    
+    
+      }
+      .boks-3{
+        grid-column: 1/4;
+        grid-row: 5/10;
+        background-image: url(../pics/глубокое.jpg);
+        @extend %forgridfotos;
+      }
+      .boks-4{
+        grid-column: 4/7;
+        grid-row:5/10;
+        background-image: url(../pics/нидерланды.png);
+        @extend %forgridfotos;
+      }
+      .boks-5{
+        grid-column: 1/10;
+        grid-row:10/15;
+        background-image: url(../pics/ельня-2.jpg);
+        @extend %forgridfotos;
+      }
+      @for $i from 1 through 5{
+        .boks-#{$i}:hover{ @extend %animation;}
+      }
+      
+    
+      .podpis{
+        display: flex;
+        flex-direction: row;
+        background-color: #3a3a3acb;
+        border-radius: 0 0 1.1vw 1.1vw;
+        width: 100%;
+        height: 3vw;
+        font-weight: bold;
+        justify-content: space-between;
+        
+        a{
+            padding: 0.5vw;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: white;
+    
+        }
+    
+        .right{
+            font-weight: lighter;
+        }
+      }
+    }
+    @for $box from 1 through 5{
+      .setka._active .boks-#{$box}{
+          transform: translate(0px, 0px);
+      }
+    }
+  
+
+    /////////////////////////
+    @media screen and (max-width:480px) {
+      .container_fornew{
+      .sale{
+        #sale{
+          font-size: 5vw;
+        }
+      }
+      
+        .birth1, .birth2{
+          font-size: 4vw;
+        }
+      }
+        .setka{  
+          height: 100vw !important;
+          width: 95%;
+          @for $n from 1 through 9{
+          .boks-#{$n}{margin: 0.5vw;}
+          }
+          .strouk{
+              height: 0.3vw;
+              width: 35vw;
+          }
+          .podpis{
+              height: 10vw;
+              a{font-size: 2.5vw;}
+          }
+          
+      }
+  }
+}

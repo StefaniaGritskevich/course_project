@@ -1,0 +1,443 @@
+$main: #e8e9ee;
+$header:#659DBD;
+%forhref {
+    color:white;
+    font-size:1.5vw;
+    text-decoration: none;
+    padding: 1.2vw;
+}
+
+%forline{
+    height: 0.1vw;
+    width: 100px;
+    background-color: black;
+    margin: 20px auto 20px auto;
+}
+
+%forcontacts{
+background-size: cover;
+width: 3vw;
+height: 3vw;
+font-size: 1.2vw;
+}
+
+%container_contacts{
+margin: 1vw 1vw 1vw 3vw;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+font-size: 1.2vw;
+}
+
+
+%forcontainer{
+    //align-items: center;
+    //justify-content:end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 45vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+%forh{
+    text-align: center;
+    //color: white;
+    color: black;
+    font-weight: lighter;
+    font-size: 2vw;
+}
+%fordays{
+    //background-color: #303A6F;
+    background-color:$header;
+    padding-left: 2vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    p{
+    font-size: 1.8vw;
+    }
+}
+%forprogs{
+    padding: 2vw;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    p{
+    font-size: 1.8vw;
+    }
+}
+%gridpicks{
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: cover;
+    border-radius: 1.1vw;
+    margin: 1vw;
+    p{
+        margin: 0;
+        background-color: #3a3a3acb;
+        color: white;
+        border-radius: 0 0 1.1vw 1.1vw;
+        font-size: 1.6vw;
+        padding: 0.5vw;
+    }
+    transition:  transform .5s ease-in-out;
+
+}
+////////////////////////////////////////////////////
+    label{
+        display: none;
+       }
+       #checkmenu{
+        display: none;
+       }
+    
+
+body{
+    color: black;
+    background-color: $main;
+    header{
+        background-color: $header;
+    }
+    .wrapper{
+        height: 5vw;
+    }
+.containerfoto{
+    //background-image: url(../pics/грузия.2.jpg);
+    @extend %forcontainer;
+
+}
+.price{
+    //background-color: #3a3a3acb;
+    background-color:$header;
+    // border-radius: 0 0 10px 10px;
+     width: 100%;
+     height: 10vw;
+     font-weight: bold;
+     font-size: 3vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    a{
+        padding-right: 1vw;
+    }
+.name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1vw;
+    color: white;
+   
+}
+}
+    .svgshki{
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       p{
+        font-size: 1.8vw;
+       }
+    }
+    .bus
+    {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    @for $var from 1 through 6{
+        .trip-#{$var}{
+            @extend %container_contacts;
+            align-items: center;
+    }
+    #transport{
+        background-image: url(../svg/icons8-микроавтобус-100.svg);
+        @extend %forcontacts;
+    }
+    #rout{
+        background-image: url(../svg/icons8-путеводитель-50_black.svg);
+        @extend %forcontacts;
+    }
+    #lenth{
+        background-image: url(../svg/icons8-время-доставки-100_black.svg);
+        @extend %forcontacts;
+    }
+    #money{
+        background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+        @extend %forcontacts;
+    }
+    #date{
+        background-image: url(../svg/icons8-календарь-100.svg);
+        @extend %forcontacts;
+    }
+}
+    }
+  
+    .marshrut{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    h2{
+        @extend %forh;
+    }
+    .strouk{
+        @extend %forline;
+    }
+    .nap{
+        @extend %forh;
+        margin: 2vw auto 3vw auto;
+        border-radius: 1.5vw;
+        width: 90%;
+        padding: 1vw;
+        border: 0.15vw solid black;
+        #zayva{
+            a{  display: block;
+                width: 8vw;
+                height: 2vw;
+                padding: 1vw 1vw 1.5vw 1vw;
+                text-decoration: none;
+                margin: 0 auto 0 auto;
+                border-radius: 2vw;
+                background-color: $header;
+                color: rgb(255, 255, 255);
+                transition: background-color 0.8s ease-out;
+            }
+
+
+
+
+            a:hover{
+                color: $header;
+                background-color: $main;
+                
+               
+            }
+        }
+    }
+}
+    .gridpics{
+        //margin: 1vw;
+        //width: 100%;
+        height: 40vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(9,7vw);
+        .pic-1{
+            @extend %gridpicks;
+            background-image: url(../pics/batumi_garden.jpg);
+            grid-row: 1/5;
+            grid-column: 1/2;
+        }
+        .pic-2{
+            @extend %gridpicks;
+            background-image: url(../pics/mcsheta.jpg);
+            grid-row: 1/5;
+            grid-column: 2/3;
+        }
+        .pic-3{
+            @extend %gridpicks;
+            background-image: url(../pics/kazbegi.jpg);
+            grid-row: 1/5;
+            grid-column: 3/4;
+        }
+        .pic-4{
+            @extend %gridpicks;
+            grid-column: 1/3;
+            grid-row: 5/10;
+            background-image: url(../pics/night_batumi.jpg);
+        }
+        .pic-5{
+            @extend %gridpicks;
+            grid-column: 3/5;
+            grid-row: 5/10;
+            background-image: url(../pics/naberezhnaia.jpg);
+
+        }
+        @for $pic from 1 through 5{
+            .pic-#{$pic}:hover{
+                transform: rotate(5deg);
+            }
+        }
+            
+        }
+    }
+    footer{
+        background-color: $header;
+        margin-top: 30vw;
+        .footer{
+            height: fit-content;
+            background-color: #659DBD;
+        }
+    }
+    ///////////////////////////////////////////////////////////
+    @media screen and (max-width:480px){
+        .containerfoto{
+            margin-top: 10vw;
+        
+        label{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            cursor: pointer;
+            z-index: 2;
+            line-height: 80px;
+            text-align: center;
+            color: white;
+            //margin-bottom: 10vw;
+    
+        }
+        .wrapper{
+            width: 100%;
+            height: 20vw !important;
+            position: relative;
+            background-color: $header;
+            z-index: 10;
+           
+        }
+        .burger-line{
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            width: 35px;
+            height:2px ;
+            top:8px;
+            right: 20px;
+        }
+        .second, .third {
+            top:18px;
+        }
+        .forth{
+            top: 28px;
+        }
+        .nav{
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            max-height: 0;
+            font-size: 0;
+            overflow: hidden;
+            transition: 1s all;
+        }
+        
+        .for_link a{
+            display: block;
+            width: 100%;
+            background-color: $header;
+            text-align: start;
+    
+            color: white;
+            text-decoration: none;
+            
+        }
+        .logo{
+            background-color: $header;
+        }
+        #checkmenu:checked ~ .nav{
+            max-height: 400px;
+            font-size: 15px;
+        }
+        #checkmenu:checked ~ .first{
+            display: none;
+            transition: 0.5s all;
+        }
+        #checkmenu:checked ~ .second{
+            transform: rotate(45deg);
+            transition: 0.5s all;
+        }
+        #checkmenu:checked ~ .third{
+            transform: rotate(-45deg);
+            transition: 0.5s all;
+        }
+        #checkmenu:checked ~ .forth{
+            display: none;
+            transition: 0.5s all;
+        }
+        .container1{
+            margin-top: 100px;
+        }
+        .blocks{height: max-content;}
+       
+    }
+    .svgshki .bus p {
+        font-size: 4vw;
+        padding-left: 2vw;}
+    
+        .svgshki .bus{
+            @for $pic from 1 through 6{
+       .trip-#{$pic} #transport, #rout, #lenth, #money, #date{
+            background-size: cover;
+            width: 6vw !important;
+            height: 6vw !important;
+        }
+    }
+    }
+     
+
+    .marshrut{
+        h2{
+            font-size: 4.5vw !important;
+        }
+    }
+    .nap{
+        P{
+            font-size: 4vw !important;
+        }
+    }
+    .gridpics {
+        height: 70vw !important;
+        grid-template-rows: repeat(9, 10vw) !important;
+        .pic-5 p, .pic-4 p, .pic-3 p, .pic-2 p , .pic-1 p{
+            font-size: 3.5vw !important;
+        }
+    }
+      footer{
+        .footer{
+          height: fit-content;
+        
+          p{
+            font-size: 3vw;
+          }
+          .katalog{
+            a{
+              font-size: 3vw !important;
+            }
+          }
+            .contacts{
+              #num{
+                font-size: 3vw;
+              }
+            }
+          }
+    .network{
+        #vk{
+            background-image: url(../svg/icons8-вконтакте-60.svg);
+            background-size: cover;
+            width: 7vw !important;
+            height: 7vw !important;
+          
+        }
+        #twi{
+            background-image: url(../svg/icons8-твиттер-60.svg);
+            background-size: cover;
+            width: 7vw !important;
+            height: 7vw !important;
+          
+       }
+        #tg{
+            background-image: url(../svg/icons8-телеграмма-app-60.svg);
+            width: 7vw;
+            height: 7vw;
+           
+        }
+    }
+}
+
+}

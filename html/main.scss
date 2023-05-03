@@ -1,0 +1,748 @@
+@import'all';
+ body{
+    ._anim-show{
+        transform: translate(0px, 120%);
+        opacity: 0;
+        transition: all 0.8s ease 0s;
+    }
+    ._anim-show._active,
+    ._active ._anim-show{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+  
+    background-color: $main;
+    margin: 0;
+    font-family: Corbel;
+    .for_link{
+        a:hover{
+            transition: 1s;
+            color: rgb(120, 120, 121);
+        }
+    }
+    .container1{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        height: 50vw;
+        background-image: url(../pics/1030.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        .centre{
+            transform: translate(0px, 120%);
+            opacity: 0;
+            transition: all 0.8s ease 0s;
+            &._active{
+                transform: translate(0px, 0px);
+                opacity: 1;
+            }
+        }
+        
+        h1{
+            @extend %forh;
+            font-size: 4.4vw;
+            margin-bottom: 0.5vw;
+        }
+        
+        h2{
+            @extend %forh;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .open-button {
+            width: 24vw;
+            background-color:#152884b0;
+            height: 4.5vw;
+            border-radius: 3vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 0;
+            cursor: pointer;
+            a{@extend %forhref;}
+          }
+          .form-popup {
+            display: none;
+            position: fixed;
+            border: 0.1vw solid #f1f1f1;
+            border-radius: 2vw;
+          }
+          .form-container {
+            max-width: 82vw;
+            padding: 1vw;
+            background-color: white;
+            border-radius: 1.5vw;
+          }
+          .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 1.7vw 0 1.7vw 0;
+            margin: 0.6vw 0 3vw 0;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 20px;
+            }
+          .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+            }
+          
+          .but_countainer .btn {
+            display: flex;
+            justify-content: center;
+            background-color: #1976D2;
+            color: white;
+            padding: 1.4vw 2vw;
+            border: none;
+            cursor: pointer;
+            width: 70%;  
+            opacity: 0.8;
+            font-size: 1.4vw;
+            font-weight: bold;
+            border-radius: 2vw;
+            margin: 1vw auto 1vw auto;
+          }
+          
+          .form-container .cancel {
+            background-color: #448AFF;
+            border-radius: 2vw;
+          }
+          
+          .form-container .btn:hover, .open-button:hover {
+            background-color: #06255bc6;
+            transition: 1s;
+          }
+        
+    }
+
+    header{
+        position:absolute;
+        top: 0;
+       background-color:$header;
+       width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav a{
+        @extend %forhref;
+       padding-top: 3.3vw;
+    }
+    .logo{padding-left: 1.1vw;}
+    label{display: none;}
+    #checkmenu{display: none;}
+   
+
+///////////////////////////////////////
+@media screen and (max-width:960px){
+    nav{.for_link{a{font-size: 2vw;}}}
+
+    .form-popup{ margin-top: 30vw;}
+    .container{ 
+        .podpis{
+            height: 5vw;
+            a{font-size: 1.8vw;}
+        }
+        
+    }
+
+    .container2{
+        .sale{
+            #sale{font-size: 2.5vw !important;}
+        }
+        .strouk{
+            height: 0.2vw;
+            width: 30vw;
+        }
+        h1, h2{font-size: 3vw;}
+        .text1, .text2, .text3{font-size: 2.5vw !important;}
+        .container3{
+           
+            .icon_text1{
+                .icon-1, .icon-2, .icon-3{
+                    background-size: 11vw;
+                    padding: 4.3vw;
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+                    width: 5.8vw;
+                    height: 5.8vw;
+                }
+            }
+        }
+    }
+        .email{
+           height:50vw !important;
+           font-size: 3vw;
+         }
+            .black form input[type=text] {
+                width: 70vw !important;
+                height: 8vw !important;
+                border: 0;
+                padding: 0;
+                margin-bottom: 8vw;
+                }   
+            .bte{
+                #btn{
+                    margin-bottom: 8vw;
+                    height: 8vw;
+                    width:fit-content;
+                    font-size: 3vw;
+                }
+            }
+    
+        .logo{
+            width: 7vw;
+            height: 7vw;
+        }
+        .centre{
+            h1{font-size: 5vw;}
+            h2{font-size: 3vw;}
+            .open-button{
+                width: 35vw;
+                height: 6vw;
+                a{font-size: 2vw;}
+            }
+        }
+       
+    footer{
+      .footer{
+        height: 35vw !important;
+          p{font-size: 2vw;}
+          .katalog{a{font-size: 2.5vw !important;}}
+            .contacts{#num{font-size: 3vw;}}
+            .network{
+              #vk{
+                  width: 6vw !important;
+                  height: 6vw !important;
+                }
+              #twi{
+                  width: 6vw !important;
+                  height: 6vw !important;
+                }
+              #tg{
+                  width: 6vw;
+                  height: 6vw;
+                }
+            }
+        }
+    }
+
+}
+//////////////////////////////////////
+/// 
+.container2{
+   @extend %forcontainers;
+   display: flex;
+    .strouk{ @extend %forline;}
+    .strouk2{ @extend %forline;}
+h1{
+    @extend %forh;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.text1, .text3{ @extend %fortext;
+overflow: hidden; }
+.text3{transition-delay: 0.4s}
+.text2{
+    @extend %fortext;
+    padding: 20px 60px 20px 60px;
+    width: 60%;
+    overflow: hidden;
+    transition-delay: 0.2s
+}
+
+.container3{
+    @extend %forcontainers;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    
+.icon_text1{
+    p{
+        text-align: center;
+        font-size: 1.5vw;
+    }
+
+.icon-1{
+    @extend %fortext;
+    background-image: url(../svg/arca.svg);
+    @extend %forphoto;
+    border:0px;
+}
+}
+.icon-2{
+    @extend %fortext;
+    border:0px;
+    background-image: url(../svg/plane.svg);
+    @extend %forphoto;
+   
+}
+.icon-3{
+    @extend %fortext;
+    border:0px;
+    background-image: url(../svg/paper.svg);
+    @extend %forphoto;
+   
+}
+
+}
+@for $img from 1 through 3{
+.container3._active .icon-#{$img}{
+    transform: scale(1);
+}
+}
+
+h2{
+    @extend %forh;
+}
+.container > div{
+    display: grid;
+    place-items:end;
+
+  }
+}
+  .container{  
+    margin: 30px;
+    gap: 1.1vw;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(15,1fr);
+    width: 85%;
+    align-items: stretch;
+    height: 70vw;
+  }
+  .box-1{
+    grid-column: 1/7;
+    grid-row: 1/5;
+    background-image: url(../pics/грузия2.png);
+    @extend %forgridfotos;
+  }
+  .box-2{
+    grid-column: 7/10;
+    grid-row:1/10;
+    background-image: url(../pics/альпы.jpg);
+    @extend %forgridfotos;
+   }
+  .box-3{
+    grid-column: 1/4;
+    grid-row: 5/10;
+    background-image: url(../pics/португалия.jpg);
+    @extend %forgridfotos;
+  }
+  .box-4{
+    grid-column: 4/7;
+    grid-row:5/10;
+    background-image: url(../pics/италия.jpg);
+    @extend %forgridfotos;
+  }
+  .box-5{
+    grid-column: 1/10;
+    grid-row:10/15;
+    background-image: url(../pics/армения2.png);
+    @extend %forgridfotos;
+  }
+    @for $i from 1 through 5{
+    .box-#{$i}:hover{ @extend %animation;}
+    }
+    @for $box from 1 through 5{
+    .container._active .box-#{$box}{
+        transform: translate(0px, 0px);
+    }
+}
+  .podpis{
+    display: flex;
+    flex-direction: row;
+    background-color: #3a3a3acb;
+    border-radius: 0 0 1.1vw 1.1vw;
+    width: 100%;
+    height: 3vw;
+    font-weight: bold;
+    justify-content: space-between;
+        a{
+            padding: 0.5vw;
+            font-size: 1.6vw;
+            font-weight: bold;
+        }
+
+    .right{ font-weight: lighter;}
+}
+.email{
+    transform: translate(0px, 50%);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    &._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 38vw;
+    background-image: url(../pics/фооооооон.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @extend %forh;
+    .modal {
+        display: none; /* По умолчанию окно закрыто */
+        z-index: 10; /* Чтобы сделать окно поверх всех элементов */
+        background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный темный фон */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        overflow-y: scroll; /* При переполнении окна делаем скролл */
+        padding: 20px;
+    }
+      .modal--open {
+        display: flex;
+        padding: 2vw 0 2vw 0; /* Модификатор для открытого окна */}
+      .modal__box {
+            width: 100%;
+            max-width: 80vw;
+            height: 35vw;
+            padding: 2.3vw;
+            background-color: #fff;
+            border-radius: 1.3vw;
+            margin: auto;
+        }
+      
+        .modal__title {
+            color: #111;
+            font-size: 5.5vw;
+            text-align: center;
+            margin-bottom: 3vw;
+        }
+      
+        .modal__info {
+            color: #111;
+            font-size: 3.5vw;
+            margin-bottom: 3vw;
+        }
+      
+        .modal__bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #btn_close{font-size: 3vw;}
+        }
+        .btn{
+                box-sizing: border-box;
+                display: block;
+                width: max-content;
+                background-color: #dc8f0a;
+                padding: 1vw 2vw;
+                font-size: 1.5vw;
+                color: #fff;
+                border-radius: 1vw;
+                text-decoration: none;
+            }
+            
+        .modal__bottom > .btn {
+            margin-right: 20px;
+        }
+        .modal__bottom > .btn:last-child {
+            margin-right: 0;
+        }
+        .modal__bottom > .btn--close {
+            background-color: #dedede;
+            color: $main;
+        }
+    
+        .black{
+            width: 100%;
+            height: 22vw;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            form{
+            input[type="text"] {
+                width: 60vw;
+                height: 5vw;
+                background-color:#d9d9d9b2;
+                border: 0;
+                border-radius: 18px;
+                color: black;
+                padding: 5px;
+    }
+}
+
+    .place::placeholder{
+        color:white ;
+        font-size: 1.6vw;
+    }
+}
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    .footer{
+        width: 100%;
+        display: grid;
+        height: 20vw;
+        background-color: $header;
+        gap: 0;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,0fr);
+        color: white;
+        font-size: 1.6vw;
+            .logo{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .adress{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .katalog{
+                display: flex;
+                flex-direction: column;
+                flex-wrap:wrap;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                    a{margin: 1.9vw 0 1.9vw 0;}
+                    #kat{
+                    @extend %forfoot;
+                    @extend %forhref;
+                    padding: 0.4vw;
+                    }
+                    #kat:hover{
+                        color: rgb(190, 190, 193);
+                        transition: 1s;
+                    }
+            }
+            .contacts{
+                #num{
+                    @extend %forfoot; 
+                }
+            }
+            .network{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                display: flex;
+                flex-direction: row;
+                    #vk{
+                        background-image: url(../svg/icons8-вконтакте-60.svg);
+                        @extend %fornetwork;
+                            a{@extend %networkhref;}
+                    }
+                    #twi{
+                        background-image: url(../svg/icons8-твиттер-60.svg);
+                        @extend %fornetwork;
+                            a{@extend %networkhref;}
+                    }
+                    #tg{
+                        background-image: url(../svg/icons8-телеграмма-app-60.svg);
+                        @extend %fornetwork;
+                            a{@extend %networkhref;}
+                    }
+            }
+            #vk:hover{
+                transition: 1s;
+                border: 0.15vw solid rgb(120, 120, 121);
+            }
+            #twi:hover{
+                transition: 1s;
+                border: 0.15vw solid rgb(120, 120, 121);
+            }
+            #tg:hover{
+                transition: 1s;
+                border: 0.15vw solid rgb(120, 120, 121);
+            }
+    }
+}
+
+
+///////////////////////
+@media screen and (max-width:480px){
+    label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 80px;
+        text-align: center;
+        color: white;
+
+    }
+    .wrapper{
+        width: 100%;
+        height: 8vw;
+        position: relative;
+        background-color: $main;
+    }
+    .burger-line{
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        width: 35px;
+        height:2px ;
+        top:8px;
+        right: 20px;
+    }
+    .second, .third {
+        top:18px;
+    }
+    .forth{
+        top: 28px;
+    }
+    .nav{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: 1s all;
+        .logo{width: 100%;}
+    }
+    .for_link a{
+        display: block;
+        width: 100%;
+        background-color: $main;
+        text-align: start;
+        color: white;
+        text-decoration: none;
+    }
+    #checkmenu:checked ~ .nav{
+        max-height: 400px;
+        font-size: 15px;
+    }
+    #checkmenu:checked ~ .first{
+        display: none;
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .second{
+        transform: rotate(45deg);
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .third{
+        transform: rotate(-45deg);
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .forth{
+        display: none;
+        transition: 0.5s all;
+    }
+    .container1{margin-top: 100px;}
+    .blocks{height: max-content;}
+    .container{  
+        height: 100vw !important;
+        width: 95%;
+        @for $n from 1 through 9{
+        .box-#{$n}{margin: 0.5vw;}
+        }
+        .strouk{
+            height: 0.3vw;
+            width: 35vw;
+        }
+        .podpis{
+            height: 10vw;
+            a{font-size: 2.5vw;}
+        }
+        
+    }
+    .container1{
+        .open-button{.centre{font-size: 4vw !important;}}
+            .but_countainer .btn{font-size: 3.5vw;}
+    }
+    .container2{
+        .sale{
+            #sale{font-size: 4vw !important;}
+        }
+        .strouk{
+            height: 0.3vw;
+            width: 35vw;
+        }
+        h1, h2{font-size: 4vw!important;}
+        .text1, .text2, .text3{font-size: 4vw !important;}
+        .container3{
+            .icon_text1{
+                p{font-size: 3vw;}
+                .icon-1, .icon-2, .icon-3{
+                    background-size: 13vw;
+                    padding: 4.3vw;
+                    background-repeat: no-repeat;
+                    background-position-x: center;
+                    background-position-y: center;
+                    width: 7.8vw;
+                    height: 7.8vw;
+                }
+            }
+        }
+    }
+        nav{.for_link{a{font-size: 3.5vw !important;}}}
+
+        .email{
+           height:50vw !important;
+           font-size: 4vw !important;
+         }
+            .black form input[type=text] {
+                width: 70vw !important;
+                height: 8vw !important;
+                border: 0;
+                padding: 0;
+                margin-bottom: 8vw;
+                }   
+            .bte{
+                #btn{
+                    margin-bottom: 8vw;
+                    height: 8vw;
+                    width:fit-content;
+                    font-size: 3vw;
+                }
+            }
+    
+        .logo{
+            width: 7vw;
+            height: 7vw;
+        }
+        .centre{
+            h1{font-size: 6vw;}
+            h2{font-size: 4vw;}
+            .open-button{
+                width: 40vw;
+                height: 7vw;
+                a{font-size: 3vw;}
+            }
+        }
+       
+    footer{
+      .footer{
+        height: 35vw !important;
+          p{font-size: 3vw !important;}
+          .katalog{a{font-size: 3vw !important;}}
+            .contacts{#num{font-size: 3vw;}}
+            .network{
+              #vk{
+                  width: 7vw !important;
+                  height: 7vw !important;
+                }
+              #twi{
+                  width: 7vw !important;
+                  height: 7vw !important;
+                }
+              #tg{
+                  width: 7vw;
+                  height: 7vw;
+                }
+            }
+        }
+    }
+}
+
+
+ }

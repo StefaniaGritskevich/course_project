@@ -1,0 +1,110 @@
+@import 'all';
+body{
+    
+    color: white;
+    .strouk{
+        @extend %forline;
+    }
+.container_for_str{
+    width: 100%;
+    height: 42vw;
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    //flex-wrap: wrap;
+    a{
+        display: block;
+        width: 40%;
+        margin: 3vw;
+        height: 30vw;
+        font-size: 1.7vw;
+    
+    }
+    .pic_for_str{
+        background-image: url(../pics/отпуск.jpg);
+        background-size: cover;
+        width: 50%;
+        height: 35vw;
+        margin: 3vw;
+        border-radius: 1.5vw;
+    }
+}
+h2{
+    margin-left: 3vw;
+    font-size: 1.7vw;
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .cant{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @for $var from 1 through 4{
+            .contacts-#{$var}{
+                @extend %container_contacts;
+                align-items: center;
+        }
+        #telephone{
+            background-image: url(../svg/icons8-телефон-100.svg);
+            @extend %forcontacts;
+        }
+        #email{
+            background-image: url(../svg/icons8-почта.svg);
+            @extend %forcontacts;
+        }
+        #adress{
+            background-image: url(../svg/icons8-путеводитель-50.svg);
+            @extend %forcontacts;
+        }
+        #time{
+            background-image: url(../svg/icons8-время-доставки-100.svg);
+            @extend %forcontacts; 
+        }
+    }
+}
+    #map{
+        //width: 50vw;
+        height: 25vw;
+        border-radius: 2vw;
+        margin: 0 3vw 0 0;
+    }
+}
+@media screen and (max-width:480px) {
+    .container_for_str a{
+        font-size: 3.5vw;
+        width: 60%;
+    }
+    .strouk{
+        width: 0;
+    }
+    h2{
+        font-size: 4vw;
+       margin-top: 7vw;
+    }
+    .map{
+    .cant{
+        margin-top: 55vw;
+        a{
+            font-size:3.5vw ;
+        }
+        @for $var from 1 through 4{
+            .contacts-#{$var}{
+                #telephone, #email, #adress, #time{
+                padding: 2.5vw;
+                margin: 1vw;
+                width:4vw;
+                height: 4vw;
+            }
+        }
+    }
+
+}
+#map{
+    height: 60vw;
+}
+}
+}
+}
+

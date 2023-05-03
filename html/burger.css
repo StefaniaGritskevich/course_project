@@ -1,0 +1,96 @@
+label{
+    display: none;
+   }
+   #checkmenu{
+    display: none;
+   }
+   @media screen and (max-width: 670px){
+    label{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2;
+        line-height: 80px;
+        text-align: center;
+
+    }
+    .wrapper{
+        width: 100%;
+        height: 80px;
+        margin: 100px auto;
+        position: relative;
+    }
+    .burger-line{
+        position: absolute;
+        background-color: grey;
+        width: 35px;
+        height:2px ;
+        top:8px;
+        right: 20px;
+    }
+    .second, .third {
+        top:18px;
+    }
+    .forth{
+        top: 28px;
+    }
+    .nav{
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        max-height: 0;
+        font-size: 0;
+        overflow: hidden;
+        transition: 0.5s all;
+        color: white;
+        float: right;
+    }
+    a{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-top: 1px solid grey;
+        background-color: rgb(98, 118, 138);
+        text-align: right;
+        
+    }
+    #checkmenu:checked ~ .nav{
+        max-height: 300px;
+        font-size: 15px;
+    }
+    #checkmenu:checked ~ .first{
+        display: none;
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .second{
+        transform: rotate(45deg);
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .third{
+        transform: rotate(-45deg);
+        transition: 0.5s all;
+    }
+    #checkmenu:checked ~ .forth{
+        display: none;
+        transition: 0.5s all;
+    }
+    .hotline{
+        display: none;
+    }
+    .hotline{
+        display: none;
+    }
+    .container1{
+        margin-top: 300px;
+    }
+    .blocks{
+        height: max-content;
+    }
+}

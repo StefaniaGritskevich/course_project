@@ -1,0 +1,181 @@
+@import 'all';
+body{
+  .container1{
+    background-image: url(../pics/05112020.jpg);
+  h1,h2{
+    color: #686262;
+  }
+}
+.strouk{
+    @extend %forline;
+}
+.bel_text{
+    display: flex;
+    justify-content: center;
+p{
+    @extend %text;
+    @extend %fortextblock;
+}
+}
+.bel_text._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+h2{
+    @extend %forh;
+}
+.gridsetka > div{
+    display: grid;
+    place-items:end;
+
+  }
+.gridsetka{
+    margin: 30px;
+    gap: 1.1vw;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(15,1fr);
+    width: 85%;
+    align-items: stretch;
+    height: 70vw;
+    margin: auto;
+}
+.box-1{
+    grid-column: 1/7;
+      grid-row: 1/5;
+      background-image: url(../pics/ельня.jpg);
+      @extend %forgridfotos;
+    }
+    .box-2{
+      grid-column: 7/10;
+      grid-row:1/10;
+      background-image: url(../pics/мальдивы.jpg);
+      @extend %forgridfotos;
+  
+  
+    }
+    .box-3{
+      grid-column: 1/7;
+      grid-row: 5/10;
+      background-image: url(../pics/чернобыль1.jpg);
+      @extend %forgridfotos;
+    }
+    .box-4{
+      grid-column: 7/10;
+      grid-row:10/15;
+      background-image: url(../pics/лида.jpg);
+      @extend %forgridfotos;
+    }
+    .box-5{
+      grid-column: 1/7;
+      grid-row:10/15;
+      background-image: url(../pics/глубокое.jpg);
+      @extend %forgridfotos;
+    }
+     @for $i from 1 through 5{
+    .box-#{$i}:hover{
+     @extend %animation;
+    }
+      @for $box from 1 through 5{
+      .gridsetka._active .box-#{$box}{
+          transform: translate(0px, 0px);
+      }
+    }
+  }
+    .podpis{
+      display: flex;
+      flex-direction: row;
+      background-color: #3a3a3acb;
+      border-radius: 0 0 1.1vw 1.1vw;
+      width: 100%;
+      height: 3vw;
+      font-weight: bold;
+      justify-content: space-between;
+      
+      a{
+          padding: 0.5vw;
+          font-size: 1vw;
+          font-weight: bold;
+  
+      }
+  
+      .right{
+          font-weight: lighter;
+      }
+    }
+    #vk:hover{
+      transition: 1s;
+      border: 0.15vw solid #4949a4 ;
+  }
+  #twi:hover{
+      transition: 1s;
+      border: 0.15vw solid #4949a4;
+  }
+  #tg:hover{
+      transition: 1s;
+      border: 0.15vw solid #4949a4;
+  }
+
+  footer .footer{
+    height: fit-content !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    .gridsetka{
+      height: 100vw;
+      width: 95%;
+      .podpis{
+        height: 10vw;
+        a{
+          font-size: 2.5vw !important;
+        }
+      }
+    }
+
+  .bel_text{
+    p{
+      font-size: 3.5vw;
+      width: 80%;
+    }
+}
+
+#popular{
+  font-size: 4vw;
+}
+    footer{
+      .footer{
+        height: fit-content;
+        p{
+          font-size: 3vw;
+        }
+        .katalog{
+          a{
+            font-size: 3vw !important;
+          }
+        }
+          .contacts{
+            #num{
+              font-size: 3vw;
+            }
+          }
+          .network{
+            #vk{
+                width: 7vw !important;
+                height: 7vw !important;
+              
+            }
+            #twi{
+                width: 7vw !important;
+                height: 7vw !important;
+              
+           }
+            #tg{
+                width: 7vw;
+                height: 7vw;
+               
+            }
+        }
+        }
+      }
+    }
+  }

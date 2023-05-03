@@ -1,0 +1,471 @@
+@charset "UTF-8";
+body .marshrut .strouk {
+  height: 0.1vw;
+  width: 100px;
+  background-color: black;
+  margin: 20px auto 20px auto;
+}
+
+body .bus #date, body .bus #money, body .bus #lenth, body .bus #rout, body .bus #transport {
+  background-size: cover;
+  width: 3vw;
+  height: 3vw;
+  font-size: 1.2vw;
+}
+
+body .bus .trip-6, body .bus .trip-5, body .bus .trip-4, body .bus .trip-3, body .bus .trip-2, body .bus .trip-1 {
+  margin: 1vw 1vw 1vw 3vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-size: 1.2vw;
+}
+
+body .containerfoto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 45vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .marshrut .nap, body .marshrut h2 {
+  text-align: center;
+  color: black;
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+body .gridpics .pic-5, body .gridpics .pic-4, body .gridpics .pic-3, body .gridpics .pic-2, body .gridpics .pic-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  border-radius: 1.1vw;
+  margin: 1vw;
+  transition: transform 0.5s ease-in-out;
+}
+body .gridpics .pic-5 p, body .gridpics .pic-4 p, body .gridpics .pic-3 p, body .gridpics .pic-2 p, body .gridpics .pic-1 p {
+  margin: 0;
+  background-color: rgba(58, 58, 58, 0.7960784314);
+  color: white;
+  border-radius: 0 0 1.1vw 1.1vw;
+  font-size: 1.6vw;
+  padding: 0.5vw;
+}
+
+label {
+  display: none;
+}
+
+#checkmenu {
+  display: none;
+}
+
+body {
+  color: black;
+  background-color: #e8e9ee;
+}
+body header {
+  background-color: #659DBD;
+}
+body .wrapper {
+  height: 5vw;
+}
+body .price {
+  background-color: #659DBD;
+  width: 100%;
+  height: 10vw;
+  font-weight: bold;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+body .price a {
+  padding-right: 1vw;
+}
+body .price .name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1vw;
+  color: white;
+}
+body .svgshki {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .svgshki p {
+  font-size: 1.8vw;
+}
+body .bus {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body .bus .trip-1 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .bus .trip-2 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .bus .trip-3 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .bus .trip-4 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .bus .trip-5 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .bus .trip-6 {
+  align-items: center;
+}
+body .bus #transport {
+  background-image: url(../svg/icons8-микроавтобус-100.svg);
+}
+body .bus #rout {
+  background-image: url(../svg/icons8-путеводитель-50_black.svg);
+}
+body .bus #lenth {
+  background-image: url(../svg/icons8-время-доставки-100_black.svg);
+}
+body .bus #money {
+  background-image: url(../svg/icons8-доллар-сша-в-круге-100.svg);
+}
+body .bus #date {
+  background-image: url(../svg/icons8-календарь-100.svg);
+}
+body .marshrut {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+body .marshrut .nap {
+  margin: 2vw auto 3vw auto;
+  border-radius: 1.5vw;
+  width: 90%;
+  padding: 1vw;
+  border: 0.15vw solid black;
+}
+body .marshrut .nap #zayva a {
+  display: block;
+  width: 8vw;
+  height: 2vw;
+  padding: 1vw 1vw 1.5vw 1vw;
+  text-decoration: none;
+  margin: 0 auto 0 auto;
+  border-radius: 2vw;
+  background-color: #659DBD;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.8s ease-out;
+}
+body .marshrut .nap #zayva a:hover {
+  color: #659DBD;
+  background-color: #e8e9ee;
+}
+body .gridpics {
+  height: 40vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(9, 7vw);
+}
+body .gridpics .pic-1 {
+  background-image: url(../pics/batumi_garden.jpg);
+  grid-row: 1/5;
+  grid-column: 1/2;
+}
+body .gridpics .pic-2 {
+  background-image: url(../pics/mcsheta.jpg);
+  grid-row: 1/5;
+  grid-column: 2/3;
+}
+body .gridpics .pic-3 {
+  background-image: url(../pics/kazbegi.jpg);
+  grid-row: 1/5;
+  grid-column: 3/4;
+}
+body .gridpics .pic-4 {
+  grid-column: 1/3;
+  grid-row: 5/10;
+  background-image: url(../pics/night_batumi.jpg);
+}
+body .gridpics .pic-5 {
+  grid-column: 3/5;
+  grid-row: 5/10;
+  background-image: url(../pics/naberezhnaia.jpg);
+}
+body .gridpics .pic-1:hover {
+  transform: rotate(5deg);
+}
+body .gridpics .pic-2:hover {
+  transform: rotate(5deg);
+}
+body .gridpics .pic-3:hover {
+  transform: rotate(5deg);
+}
+body .gridpics .pic-4:hover {
+  transform: rotate(5deg);
+}
+body .gridpics .pic-5:hover {
+  transform: rotate(5deg);
+}
+
+footer {
+  background-color: #659DBD;
+  margin-top: 30vw;
+}
+footer .footer {
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #659DBD;
+}
+
+@media screen and (max-width: 480px) {
+  .containerfoto {
+    margin-top: 10vw;
+  }
+  .containerfoto label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 80px;
+    text-align: center;
+    color: white;
+  }
+  .containerfoto .wrapper {
+    width: 100%;
+    height: 20vw !important;
+    position: relative;
+    background-color: #659DBD;
+    z-index: 10;
+  }
+  .containerfoto .burger-line {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 2px;
+    top: 8px;
+    right: 20px;
+  }
+  .containerfoto .second, .containerfoto .third {
+    top: 18px;
+  }
+  .containerfoto .forth {
+    top: 28px;
+  }
+  .containerfoto .nav {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 1s all;
+  }
+  .containerfoto .for_link a {
+    display: block;
+    width: 100%;
+    background-color: #659DBD;
+    text-align: start;
+    color: white;
+    text-decoration: none;
+  }
+  .containerfoto .logo {
+    background-color: #659DBD;
+  }
+  .containerfoto #checkmenu:checked ~ .nav {
+    max-height: 400px;
+    font-size: 15px;
+  }
+  .containerfoto #checkmenu:checked ~ .first {
+    display: none;
+    transition: 0.5s all;
+  }
+  .containerfoto #checkmenu:checked ~ .second {
+    transform: rotate(45deg);
+    transition: 0.5s all;
+  }
+  .containerfoto #checkmenu:checked ~ .third {
+    transform: rotate(-45deg);
+    transition: 0.5s all;
+  }
+  .containerfoto #checkmenu:checked ~ .forth {
+    display: none;
+    transition: 0.5s all;
+  }
+  .containerfoto .container1 {
+    margin-top: 100px;
+  }
+  .containerfoto .blocks {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .svgshki .bus p {
+    font-size: 4vw;
+    padding-left: 2vw;
+  }
+  .svgshki .bus .trip-1 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .svgshki .bus .trip-2 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .svgshki .bus .trip-3 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .svgshki .bus .trip-4 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .svgshki .bus .trip-5 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .svgshki .bus .trip-6 #transport, .svgshki .bus #rout, .svgshki .bus #lenth, .svgshki .bus #money, .svgshki .bus #date {
+    background-size: cover;
+    width: 6vw !important;
+    height: 6vw !important;
+  }
+  .marshrut h2 {
+    font-size: 4.5vw !important;
+  }
+  .nap P {
+    font-size: 4vw !important;
+  }
+  .gridpics {
+    height: 70vw !important;
+    grid-template-rows: repeat(9, 10vw) !important;
+  }
+  .gridpics .pic-5 p, .gridpics .pic-4 p, .gridpics .pic-3 p, .gridpics .pic-2 p, .gridpics .pic-1 p {
+    font-size: 3.5vw !important;
+  }
+  footer .footer {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  footer .footer p {
+    font-size: 3vw;
+  }
+  footer .footer .katalog a {
+    font-size: 3vw !important;
+  }
+  footer .footer .contacts #num {
+    font-size: 3vw;
+  }
+  footer .network #vk {
+    background-image: url(../svg/icons8-вконтакте-60.svg);
+    background-size: cover;
+    width: 7vw !important;
+    height: 7vw !important;
+  }
+  footer .network #twi {
+    background-image: url(../svg/icons8-твиттер-60.svg);
+    background-size: cover;
+    width: 7vw !important;
+    height: 7vw !important;
+  }
+  footer .network #tg {
+    background-image: url(../svg/icons8-телеграмма-app-60.svg);
+    width: 7vw;
+    height: 7vw;
+  }
+}/*# sourceMappingURL=tour.css.map */
