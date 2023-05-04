@@ -1,4 +1,4 @@
-const requestURL = "https://raw.githubusercontent.com/StefaniaGritskevich/Kursovoi_Proekt_HTML/master/html/tour.xml"; 
+const requestURL = "https://raw.githubusercontent.com/StefaniaGritskevich/course_project/master/html/tour.xml"; 
 
 function Open(){
 const xhr = new XMLHttpRequest(); 
